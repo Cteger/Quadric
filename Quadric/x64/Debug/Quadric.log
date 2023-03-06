@@ -1,0 +1,5 @@
+﻿  Header.cpp
+C:\Users\user\source\repos\Algoritmi\Quadric\Quadric\Header.cpp(25,31): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  Source.cpp
+  Создание кода...
+  Quadric.vcxproj -> C:\Users\user\source\repos\Algoritmi\Quadric\x64\Debug\Quadric.exe
