@@ -1,2 +1,0 @@
-The first root is: 3
-The second root is: -2.5
