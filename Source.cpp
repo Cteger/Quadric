@@ -5,11 +5,13 @@
 
 int main()
 {
-	float *abc, *x;
+	float* abc;
+	abc = new float[3];
+	float *x;
 
 	float D;
 
-	abc = Read_abc();
+	abc = Read_abc(abc);
 	
 	D = Find_discriminant(abc);
 
@@ -17,7 +19,7 @@ int main()
 	{
 		x = new float[2];
 
-		x = Find_solution(abc, D);
+		x = Find_solution(abc, x, D);
 
 		std::cout << "The first root is: " << x[0] << std::endl;
 		std::cout << "The second root is: " << x[1] << std::endl;
@@ -30,4 +32,6 @@ int main()
 	{
 		std::cout << "No roots" << std::endl;
 	}
+
+	delete[] abc;
 }

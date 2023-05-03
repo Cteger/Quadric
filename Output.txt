@@ -1,2 +1,2 @@
-The first root is:
-The second root is:
+The first root is: 3.5
+The second root is: 3.5

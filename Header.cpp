@@ -5,15 +5,12 @@
 #include <string>
 #include <math.h>
 
-#define input_file "C:/Users/user/source/repos/Algoritmi/Quadric/Quadric/Input.txt"
-#define output_file "C:/Users/user/source/repos/Algoritmi/Quadric/Quadric/Output.txt"
+#define input_file "C:/Users/user/source/repos/Quadric/Quadric/Input.txt"
+#define output_file "C:/Users/user/source/repos/Quadric/Quadric/Output.txt"
 
 
-float* Read_abc()
+float* Read_abc(float *abc)
 {
-    float *abc;
-    abc = new float[3]; // How free memory?
-
     std::string line;
 
 	std::ifstream in(input_file);
@@ -40,12 +37,8 @@ float Find_discriminant(float* abc)
     return D;
 }
 
-float *Find_solution(float *abc, float D)
+float *Find_solution(float *abc, float *x, float D)
 {
-    float *x;
-
-    x = new float[2]; // How free memory?
-
     x[0] = ((-1) * abc[1] + sqrt(D)) / (2 * abc[0]);
     x[1] = ((-1) * abc[1] - sqrt(D)) / (2 * abc[0]);
 
